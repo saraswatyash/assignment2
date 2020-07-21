@@ -35,32 +35,34 @@ function an(a)
 }
 function cv(a)
 {
-
+ let b=a.split("");
+ 
     for(var i=0;i<a.length;i++)
     {
-        if(a[i]=='a')
+        if(b[i]=='a')
         {
-           a[i]=1;
+          b[i]='1';
             
         }
-        if(a[i]='e')
+        if(b[i]=='e')
         {
-            a[i]=2;
+            b[i]=2;
         }
-        if(a[i]='i')
+        if(b[i]=='i')
         {
-            a[i]=3;
+            b[i]=3;
         }
-        if(a[i]='o')
+        if(b[i]=='o')
         {
-            a[i]=4;
+            b[i]=4;
         }
-        if(a[i]='u')
+        if(b[i]=='u')
         {
-            a[i]=5;
+            b[i]=5;
         }
     }
-    console.log(a);
+    b=b.join("");
+    console.log(b);
 }
 function revl(a,b)
 {
