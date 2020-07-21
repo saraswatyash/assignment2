@@ -35,13 +35,15 @@ function an(a)
 }
 function cv(a)
 {
-    let c=a;
+    console.log(typeof a);
+   a.replace("a","1");
+    console.log(a);
     for(var i=0;i<a.length;i++)
     {
-        if(c[i]=='a')
+        if(a[i]=='a')
         {
-           c[i]=1;
-            console.log(c[i]);
+           a[i]=1;
+            console.log(a[i]);
         }
         if(a[i]='e')
         {
