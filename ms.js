@@ -67,22 +67,24 @@ function cv(a)
 function revl(a,b)
 {
     var c=a.split(" ");
+    var rev_arr=[]
     for(i=0;i<c.length;i++)
     {
-        for(j=0;j<c[i].length;j++)
+
+        if(c[i].charAt(0)==b)
         {
-            
-            if(c[i][1]=b)
+            for(j=c[i].length;j>=0;j--)
             {
-                c[i]=c[i].split("");
-                c[i]=c[i].reverse();
-                c[i]=c[i].join("");
-                
+                rev_arr.push(c[i][j]);
             }
+            rev_arr[i].join("");
+        }
+        else
+        {
+            rev_arr.push(c[i]);
         }
     }
-    console.log(c);
-    
+    console.log(rev_arr);
 }
 function ars(a)
 {
