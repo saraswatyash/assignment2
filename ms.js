@@ -138,3 +138,20 @@ function realval(a)
         console.log("boolean");
     }
 }
+function numinstr(a)
+{
+    var temp=[];
+    const b=['1','2','3','4','5','6','7','8','9','0'];
+    for(i=0;i<a.length;i++)
+    {
+        for(j=0;j<b.length;j++)
+        {
+            if(a[i].indexOf(b[j])==1)
+            {
+                temp.push(a[i]);
+            }
+        }
+    }
+    a=temp
+    console.log(a);
+}
